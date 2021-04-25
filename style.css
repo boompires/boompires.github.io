@@ -155,3 +155,8 @@ h1 {
 /* #brainImg {
   transform: rotate(45deg);
 } */
+span {
+  font-size: 0.85em;
+  margin-top: 1px;
+  padding: 0;
+}

@@ -6,6 +6,5 @@ function rotateImg() {
   if (rotation >= 360) {
     rotation = 0;
   }
-  console.log(rotation);
   brainImg.style.transform = `rotate(${rotation}deg)`;
 }
