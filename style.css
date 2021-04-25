@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 :root {
-  --primary: #38aecc;
-  --secondary: #aafac8;
-  --highlight: #dc0073;
-  --button: #4059ad;
-  --lightColor: #f2e2d2;
+  --blue-crayola: #5680e9ff;
+  --sky-blue: #84ceebff;
+  --cyan-process: #5ab9eaff;
+  --indigo: #440381ff;
+  --granny-smith-apple: #90e39aff;
 }
 
 * {
@@ -23,7 +23,8 @@ pre code {
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary);
+  background: var(--blue-crayola);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -32,9 +33,18 @@ body {
   text-align: center;
 }
 
+.container p,
+li {
+  font-size: 1.2em;
+}
+
+.description {
+  text-align: left;
+}
+
 .navbar {
   display: flex;
-  background-color: var(--secondary);
+  background-color: var(--sky-blue);
   align-items: center;
   justify-content: center;
 }
@@ -62,9 +72,17 @@ body {
 }
 
 .main {
-  background-color: var(--highlight);
+  background-color: var(--cyan-process);
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #logo a {
@@ -82,25 +100,33 @@ body {
 }
 
 h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Varela Round', sans-serif;
   font-size: 3em;
 }
 
-#info {
-  width: 50%;
+#html {
+  width: 60%;
   height: 350px;
-  background-color: var(--button);
+  background-color: var(--granny-smith-apple);
   text-align: center;
   margin: auto;
-  padding: 80px 0;
+  margin-bottom: 20px;
 }
-#why {
-  width: 50%;
+#css {
+  width: 45%;
   height: 350px;
-  background-color: var(--lightColor);
+  background-color: var(--indigo);
+  color: white;
   text-align: center;
   margin: auto;
-  padding: 80px 0;
+}
+
+#script {
+  width: 45%;
+  height: 350px;
+  background-color: var(--blue-crayola);
+  text-align: center;
+  margin: auto;
 }
 
 /* 
