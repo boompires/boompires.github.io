@@ -5,7 +5,7 @@
   --sky-blue: #84ceebff;
   --cyan-process: #5ab9eaff;
   --indigo: #440381ff;
-  --granny-smith-apple: #90e39aff;
+  --granny-smith-apple: #9c38fa;
 }
 
 * {
@@ -105,7 +105,7 @@ li {
 
 #hero {
   width: 100%;
-  height: 200px;
+  height: 150px;
   text-align: center;
   margin: auto;
   padding: 20px 0;
@@ -113,32 +113,37 @@ li {
 
 h1 {
   font-family: 'Varela Round', sans-serif;
-  font-size: 3em;
+  font-size: 3.5em;
 }
 
 #html {
   width: 60%;
-  height: 350px;
+  height: 400px;
   background-color: var(--granny-smith-apple);
+  color: white;
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 #css {
   width: 45%;
-  height: 350px;
+  height: 400px;
   background-color: var(--indigo);
   color: white;
   text-align: center;
   margin: auto;
+  padding-top: 20px;
 }
 
 #script {
   width: 45%;
-  height: 350px;
+  height: 400px;
   background-color: var(--blue-crayola);
+  color: white;
   text-align: center;
   margin: auto;
+  padding-top: 20px;
 }
 
 #listItem {
