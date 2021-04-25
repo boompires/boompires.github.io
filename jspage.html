@@ -21,7 +21,28 @@
       </div>
       <div id="about" class="nav"><a href="about.html">About</a></div>
     </nav>
-    <h1>Javascript!</h1>
-    <p>Under Construction...</p>
+    <h1>Javascript</h1>
+    <p>Here is an example of some Javascript</p>
+    <pre>
+      <code>
+&lt;script&gt;
+  function addItem() {
+    let newItem = document.createElement('div');
+    newItem.innerHTML = 'New Item';
+    document.getElementById('listItem').appendChild(newItem);
+  }
+&lt;/script&gt;
+      </code>
+    </pre>
+    <p>Here is what that code does on this page.</p>
+    <br />
+    <div id="listItem" onclick="addItem()">Click here to add an item</div>
+    <script>
+      function addItem() {
+        let newItem = document.createElement('div');
+        newItem.innerHTML = 'New Item';
+        document.getElementById('listItem').appendChild(newItem);
+      }
+    </script>
   </body>
 </html>
