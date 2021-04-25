@@ -44,9 +44,10 @@ li {
 
 .navbar {
   display: flex;
-  background-color: var(--sky-blue);
+  background: linear-gradient(var(--sky-blue), var(--blue-crayola));
   align-items: center;
   justify-content: center;
+  /* margin: 10px; */
 }
 
 .main {
@@ -56,10 +57,10 @@ li {
   justify-content: center;
 }
 
-.logo {
+/* .logo {
   width: 80px;
-  height: 80px;
-}
+  height: 80px; 
+} */
 
 .nav {
   padding: 40px;
