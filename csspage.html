@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .styleDemo {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        margin: 20px;
+        font-size: 2em;
+      }
+    </style>
     <title>CSS</title>
   </head>
   <body>
@@ -23,21 +33,65 @@
     </nav>
     <h1>What is CSS?</h1>
     <section>
+      <p>
+        CSS is what makes your website not look bland. It's like the clothes we
+        wear but for your website. CSS is always made up of a property and a
+        value separated by a colon (:). First of all, CSS can be coded in your
+        html inside a style tag that goes in your head tag. It looks like this:
+        &lt;style&gt; &lt;/style&gt;.
+      </p>
+      <p>
+        Another way to code CSS is on a separate CSS file. On the file you start
+        with a selector (html element, class name, etc.). Then, you use curly
+        braces which look like this: { }. In those braces you list properties
+        and values separated by a colon (:).
+      </p>
+      <h3>Some common properties are:</h3>
+      <ol>
+        <li>color</li>
+        <li>background-color</li>
+        <li>font-size</li>
+        <li>text-align</li>
+        <li>margin</li>
+      </ol>
+      <p>
+        Values can be given in words or numbers. Numbers can be in pixels,
+        points or percentages.
+      </p>
+      <p>
+        An example of how you would write it in your code would be - margin:
+        20px;
+      </p>
+      <h3>
+        Below is an example of some CSS code as used on this page to style the 5
+        red boxes.
+      </h3>
       <pre>
         <code>
-  p { color: red; }
-  body { background-color: #eee; }
-
-  .navbar {
-    display: flex;
-    background-color: var(--secondary);
-    align-items: center;
-    justify-content: center;
+&lt;style&gt; 
+  .styleDemo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    margin: 20px;
+    font-size: 2em;
   }
+&lt;/style&gt;
 
         </code>
       </pre>
+      <h3>
+        And below are the results of that CSS code on some simple divs in my
+        HTML.
+      </h3>
     </section>
-    <p>Under Construction</p>
+    <section>
+      <div class="styleDemo">1</div>
+      <div class="styleDemo">2</div>
+      <div class="styleDemo">3</div>
+      <div class="styleDemo">4</div>
+      <div class="styleDemo">5</div>
+    </section>
   </body>
 </html>
