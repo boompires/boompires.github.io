@@ -22,7 +22,7 @@
       <div id="examples" class="nav"><a href="examples.html">Examples</a></div>
     </nav>
     <h1>What is Javascript?</h1>
-    <p>Here is an example of some Javascript</p>
+    <h3>Here is an example of some Javascript</h3>
     <pre>
       <code>
 &lt;script&gt;
@@ -34,9 +34,11 @@
 &lt;/script&gt;
       </code>
     </pre>
-    <p>Here is what that code does on this page.</p>
+    <h3>Here is what that code does on this page.</h3>
     <br />
-    <div id="listItem" onclick="addItem()">Click here to add an item</div>
+    <div id="listItem" onclick="addItem()">
+      Click here to add an item to the list!
+    </div>
     <script>
       function addItem() {
         let newItem = document.createElement('div');
