@@ -37,10 +37,13 @@
     <h3>Here is an example of some Javascript</h3>
     <pre>
       <code>
+&lt;div id="listItem" onclick="addItem()">Click here to add an item 
+to the list!&lt;/div>    
+
 &lt;script&gt;
   function addItem() {
     let newItem = document.createElement('div');
-    newItem.innerHTML = 'New Item';
+    newItem.innerHTML = 'New Item!';
     document.getElementById('listItem').appendChild(newItem);
   }
 &lt;/script&gt;
