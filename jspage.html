@@ -13,6 +13,7 @@
         <a href="index.html"
           ><img src="./img/IMG-0877.jpg" alt="Cute Cat Nola"
         /></a>
+        <div class="home"><a href="index.html">Home</a></div>
       </div>
       <div id="htmlmenu" class="nav"><a href="htmlpage.html">HTML</a></div>
       <div id="cssmenu" class="nav"><a href="csspage.html">CSS</a></div>
@@ -22,7 +23,17 @@
       <div id="examples" class="nav"><a href="examples.html">Examples</a></div>
     </nav>
     <h1>What is Javascript?</h1>
-    <p></p>
+    <p>
+      Javascript is the most popular programming language in the world. It's
+      what makes HTML and CSS interactive by doing many useful things. With it
+      you can make buttons, alerts, store information and process input from a
+      form.
+    </p>
+    <p>
+      Javascript can be coded in your HTML page with script tags which look like
+      this: &lt;script&gt; &lt;/script&gt;. You can also code Javascript on a
+      separate Javascript file which has to end with a .js extension.
+    </p>
     <h3>Here is an example of some Javascript</h3>
     <pre>
       <code>
@@ -43,7 +54,8 @@
     <script>
       function addItem() {
         let newItem = document.createElement('div');
-        newItem.innerHTML = 'New Item';
+        newItem.innerHTML = 'New Item!';
+        newItem.classList.add('item');
         document.getElementById('listItem').appendChild(newItem);
       }
     </script>

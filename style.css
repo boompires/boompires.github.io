@@ -57,7 +57,18 @@ li {
   background: linear-gradient(var(--sky-blue), var(--blue-crayola));
   align-items: center;
   justify-content: center;
+  position: relative;
   /* margin: 10px; */
+}
+
+.home {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  color: var(--sky-blue);
+  font-size: 1.5em;
 }
 
 .main {
@@ -100,7 +111,7 @@ li {
 #logo a {
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: var(--sky-blue);
 }
 
 #hero {
@@ -150,6 +161,11 @@ h1 {
   font-size: 2em;
   margin-left: 30px;
   margin-bottom: 10px;
+}
+
+.item {
+  color: pink;
+  font-size: 0.8em;
 }
 
 /* #brainImg {
